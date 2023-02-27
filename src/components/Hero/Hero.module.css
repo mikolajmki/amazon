@@ -1,10 +1,21 @@
 .container {
     position: relative;
+    padding: 0rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.side {
+    flex: 3;
 }
 
 .wrapper {
+    flex: 3;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 2rem;
 }
 
 .blueCircle {
@@ -19,4 +30,39 @@
     position: absolute;
     width: 15rem;
     height: 15rem;
+}
+
+.text1 {
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    width: min-content;
+    display: block;
+    font-weight: 600;
+}
+
+.text2 {
+    display: flex;
+    flex-direction: column;
+    width: min-content;
+    color: black;
+}
+
+.text2 > :first-child {
+    font-weight: 800;
+    font-size: 2.5rem;
+}
+
+.text2 > :nth-child(2) {
+    display: block;
+}
+
+.traffic {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+}
+
+.traffic > :first-child {
+    font-weight: 800;
+    font-size: 2.5rem;
 }
